@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset = "UTF-8">
+	<meta charset="UTF-8">
 	<meta name="author" content="Andrei Opran">
 	<meta name="description" content="stiluri arhitecturale">
 	<meta name="keywords" content="cladiri">
 
 	<title>Stiluri arhitecturale</title>
-	<link rel ="stylesheet" href = "index.css" type="text/css">
+	<link rel="stylesheet" href="index.css" type="text/css">
 	<link rel="icon" type="image.x-icon" href="Imagini/favicon.ico">
 	<base href="Proiect TW">
-	
+
 </head>
+
 <body>
 	<header>
 		<nav class="nav">
 			<ul class="navList">
-				<li class="navListLogo">Stiluri arhitecturale</li>
-				<li class="navListItem">Stiluri
+				<li class="navListLogo" id="logo">Stiluri arhitecturale</li>
+				<li class="navListItem" id="butonStiluri">Meniu
 					<ul class="navListItemDropdown">
 						<li class="navListItemDropdownItem">Baroc</li>
 						<li class="navListItemDropdownItem">Victorian</li>
@@ -27,37 +29,79 @@
 						<li class="navListItemDropdownItem">Gotic</li>
 					</ul>
 				</li>
-				<li class="navListItem">Trivia</li>
+				<li class="navListItem" id="butonTrivia">Trivia</li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
 		<article>
-			<h1>Ce este un stil arhitectural?</h1>
-			<p>Un stil arhitectural este o metodă specifică de construcție, caracterizat sau definit prin caracteristicile care îl fac remarcat. Un stil poate include elemente cum ar fi forma, metoda de construcție, materiale, și caracterul sau specificul regional. Cel mai adesea stilurile arhitecturale sunt clasificate ca o cronologie de stiluri, care se schimbă în timp, în funcție de perioada în care acestea s-au manifestat. Schimbările de stiluri pot reflecta, tradiții, credințe și religii în schimbare, sau apariția de noi idei și tehnologii noi, care fac posibile stiluri noi.</p>
+
+			<ul class="cards">
+				<li id="primulCard" class="inner">
+					<h1>Ce este un stil arhitectural?</h1>
+					<p class="innerText">Un stil arhitectural este o metodă specifică de construcție, caracterizat sau
+						definit prin caracteristicile care îl fac remarcat. Un stil poate include elemente cum ar fi
+						forma, metoda de construcție, materiale, și caracterul sau specificul regional. Cel mai adesea
+						stilurile arhitecturale sunt clasificate ca o cronologie de stiluri, care se schimbă în timp, în
+						funcție de perioada în care acestea s-au manifestat. Schimbările de stiluri pot reflecta,
+						tradiții, credințe și religii în schimbare, sau apariția de noi idei și tehnologii noi, care fac
+						posibile stiluri noi.</p>
+				</li>
+				<li id="cardBaroc" class="inner">
+					<h2>Baroc</h2>
+					<p class="innerText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium distinctio
+						voluptas nemo consequatur atque non error dolore magnam! In officia est aperiam quibusdam velit
+						laudantium distinctio cumque obcaecati consequatur earum.</p>
+					<img src="Imagini/poza1.png">
+				</li>
+				<li id="cardVictorian" class="inner">
+					<h2>Victorian</h2>
+					<p class="innerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatem
+						distinctio recusandae numquam voluptatibus non, dolores suscipit nesciunt eveniet debitis fuga
+						aspernatur veritatis, officia doloribus omnis aut ipsam temporibus soluta.</p>
+						<img src="Imagini/poza1.png">
+					</li>
+				<li id="cardArtNouveau" class="inner">
+					<h2>Art Nouveau</h2>
+					<p class="innerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa facere sint
+						beatae quaerat, nobis, laborum modi doloremque accusamus soluta cumque reiciendis similique
+						explicabo. Fugit impedit expedita laborum quae deserunt quo. Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Mollitia, similique esse rerum harum ullam enim illum. Neque
+						possimus odio amet earum magnam excepturi pariatur beatae sequi repudiandae accusamus. Iusto,
+						distinctio.</p>
+					<img src="Imagini/poza1.png">
+				<li id="cardArtDeco" class="inner">
+					<h2>Art Deco</h2>
+					<p class="innerText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium distinctio
+						voluptas nemo consequatur atque non error dolore magnam! In officia est aperiam quibusdam velit
+						laudantium distinctio cumque obcaecati consequatur earum.</p>
+						<img src="Imagini/poza1.png">
+					</li>
+				<li id="cardModern" class="inner">
+					<h2>Modern</h2>
+					<p class="innerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatem
+						distinctio recusandae numquam voluptatibus non, dolores suscipit nesciunt eveniet debitis fuga
+						aspernatur veritatis, officia doloribus omnis aut ipsam temporibus soluta.</p>
+						<img src="Imagini/poza1.png">
+					</li>
+				<li id="cardGotic" class="inner">
+					<h2>Gotic</h2>
+					<p class="innerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa facere sint
+						beatae quaerat, nobis, laborum modi doloremque accusamus soluta cumque reiciendis similique
+						explicabo. Fugit impedit expedita laborum quae deserunt quo. Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Mollitia, similique esse rerum harum ullam enim illum. Neque
+						possimus odio amet earum magnam excepturi pariatur beatae sequi repudiandae accusamus. Iusto,
+						distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi perferendis
+						magnam sint, harum consequatur porro repellendus nam ab, voluptatem voluptatum iure quo hic
+						nihil error sequi quas nulla excepturi.</p>
+						<img src="Imagini/poza1.png">
+			</ul>
+
 		</article>
-			
-		<ul class="cards">
-			<li class="card">
-				<img src="Imagini/baroc.jpg">
-				<h2>Baroc</h2>
-				<p>Barocul este un stil arhitectural și artistic care a apărut în Italia la sfârșitul secolului al XVI-lea și s-a răspândit în Europa în secolul al XVII-lea. A fost un stil care a urmat Renașterea și care a fost înlocuit de stilul rococo și de stilul neoclasic. Barocul a fost un stil care a fost folosit în special în arhitectură, dar și în alte arte, cum ar fi sculptura, pictura, literatura, muzica și dansul.</p>
-			</li>
-			<li class="card">
-				<img src="Imagini/victorian.jpg">
-				<h2>Victorian</h2>
-				<p>Victorianul este un stil arhitectural care a apărut în Marea Britanie în perioada 1837-1901, în timpul domniei reginei Victoria. A fost un stil care a fost influențat de stilurile anterioare, cum ar fi goticul, renascentismul și barocul. Victorianul a fost un stil care a fost folosit în special în arhitectură, dar și în alte arte, cum ar fi sculptura, pictura, literatura, muzica și dansul.</p>
-			</li>
-			<li class="card">
-				<img src="Imagini/artnouveau.jpg">
-				<h2>Art Nouveau</h2>
-				<p>Art Nouveau este un stil arhitectural și artistic care a apărut în Europa la sfârșitul secolului al XIX-lea și s-a răspândit în întreaga lume în secolul al XX-lea. A fost un stil care a fost influențat de stilurile anterioare, cum ar fi goticul, renascentismul și barocul. Art Nouveau a fost un stil care a fost folosit în special în arhitectur
-		</ul>
-		
-		
-	</main>
+	</main>g
 
 	<footer></footer>
 </body>
+
 </html>
