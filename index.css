@@ -1,190 +1,309 @@
-header {
-  text-transform: uppercase;
-  padding-bottom: 5rem;
+html {
+	scroll-behavior:smooth;
 }
-body{
-  background-color:rgb(36, 36, 36);
+
+header {
+	text-transform: uppercase;
+	padding-bottom: 7rem;
+}
+
+body {
+	background-color: rgb(36, 36, 36);
 }
 
 /* de aici incepe nav ul  */
 
 
-.nav{
-  position:fixed;
-  width: calc(100vw - 2rem);
-  box-shadow:0 0 10px black;
-  background-color: darkslategrey;
-  border-radius: 15px;
-  right:1rem;
-  left:1rem;  
+.nav {
+	position: fixed;
+	z-index:1;
+	width: calc(100vw - 2rem);
+	box-shadow: 0 0 10px black;
+	background-color: darkslategrey;
+	border-radius: 15px;
+	right: 1rem;
+	left: 1rem;
 }
 
-.navList{
-  display: flex;
-  justify-content: flex-end;
-  align-items:center;
-  gap: 2rem;
-  margin: 0 2rem;
-  margin-right: 5rem;
-  color:azure;
+.navList {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 2rem;
+	margin: 0 2rem;
+	margin-right: 5rem;
+	color: azure;
 }
 
-.navListLogo{
-  list-style: none;
-  margin-right: auto;
-  font-weight:bold;
-  font-size:130%;
-  white-space: nowrap;
-  transition: color 0.2s ease-in-out;
+.navListLogo {
+	list-style: none;
+	margin-right: auto;
+	font-weight: bold;
+	font-size: 130%;
+	white-space: nowrap;
+	transition: color 0.2s ease-in-out;
 }
 
-.navListLogo:hover{
-  cursor:pointer;
-  color:rgb(33, 56, 56);
+.navListLogo:hover {
+	cursor: pointer;
+	color: rgb(33, 56, 56);
 }
 
-.navListItem{
-  list-style: none;
-  position:relative;
-  padding: 1.5rem 1rem;
-  cursor:pointer;
-  font-size:90%;
-}
-#logo{
-  cursor: default;
-}
-#butonStiluri{
-  cursor:default;
-}
-.navListItemDropdownItem{
-  cursor:pointer;
+.navListItem {
+	list-style: none;
+	position: relative;
+	padding: 1.5rem 1rem;
+	cursor: pointer;
+	font-size: 90%;
 }
 
-#butonTrivia{
-  transition: color 0.2s ease-in-out;
-}
-#butonTrivia:hover{
-  color:rgb(33, 56, 56);
+#logo {
+	cursor: default;
 }
 
-.navListItem:hover .navListItemDropdown{
-  opacity: 1;
-  visibility:visible;
+#butonStiluri {
+	cursor: default;
 }
 
-.navListItemDropdown{
-  position:absolute;
-  top:100%;
-  left:-1rem;
-  box-shadow:0 0 10px black;
-  border-radius:0 0 10px 10px;
-  width:auto;
-  padding:1rem;
-  display:flex;
-  flex-direction:column;
-  gap:0.5rem;
-  opacity:0;
-  visibility:hidden;
-  transition:opacity 200ms ease-in-out;
-  background-color: rgb(33, 56, 56);
-} 
-
-.navListItemDropdownItem{
-  list-style:none;
-  padding:0.5rem 1rem;
-  border-radius:5px;
-  transition:background-color 200ms ease-in-out;
-  white-space: nowrap;
+.navListItemDropdownItem {
+	cursor: pointer;
 }
-.navListItemDropdownItem:hover{
-  background-color:darkslategrey;
+
+#butonTrivia {
+	transition: color 0.2s ease-in-out;
+}
+
+#butonTrivia:hover {
+	color: rgb(33, 56, 56);
+}
+
+.navListItem:hover .navListItemDropdown {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navListItemDropdown {
+	position: absolute;
+	top: 100%;
+	left: -1rem;
+	box-shadow: 0 0 10px black;
+	border-radius: 0 0 10px 10px;
+	width: auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 200ms ease-in-out;
+	background-color: rgb(33, 56, 56);
+}
+
+.navListItemDropdownItem {
+	list-style: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	transition: background-color 200ms ease-in-out;
+	white-space: nowrap;
+}
+
+.navListItemDropdownItem:hover {
+	background-color: #2f4f4f;
 }
 
 
 /* main  */
 
+.evidentiereSpan {
+	text-decoration: underline;
+	font-weight: bold;
+}
 
-.cards{
-  display:grid;
-  margin-right: 1.75rem;
-  border-radius: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content:space-between;
-  gap:3rem;
-  grid-template-areas:
-    "primul-card primul-card primul-card"
-    "card-baroc card-victorian card-artnouveau";
+.cards {
+	display: grid;
+	margin-right: 1.75rem;
+	border-radius: 25px;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-between;
+	gap: 3rem;
+	grid-template-areas:
+		"primul-card primul-card primul-card"
+		"card-baroc card-victorian card-artnouveau";
 }
 
 
 .cards li {
-  border: 1.5px solid darkslategrey;
-  margin-bottom: 1em;
-  border-radius:10px;
-  transition: background-color 0.5s ease-in-out; /* Add this line */
+	border: 1.5px solid darkslategrey;
+	margin-bottom: 1em;
+	border-radius: 10px;
+	transition: background-color 0.5s ease-in-out;
 }
 
-.cards li:hover h1{
-  background-color: darkslategrey;
-  cursor: default;
-}
-.cards li:hover h2{
-  background-color: darkslategrey;
-  cursor: default;
-}
-.cards li:hover .innerText{
-  background-color: rgb(33, 56, 56);
-  cursor: default;
-}
-.cards li:hover{
-  background-color: darkslategrey;
-  cursor: default;
+.cards li:hover h1 {
+	background-color: darkslategrey;
+	cursor: default;
 }
 
-.cards h2, h1 {
-  background: rgb(36, 36, 36);
-  margin: 0;
-  padding: 0.5em 1em;
-  color:azure;
-  transition: background-color 0.5s ease-in-out; /* Add this line */
+.cards li:hover h2 {
+	background-color: darkslategrey;
+	cursor: default;
 }
 
-.cards .inner{
-  list-style: none;
-  background-color: rgb(36, 36, 36);
-  padding: 0.5em 1em;
+.cards li:hover .innerText {
+	background-color: rgb(33, 56, 56);
+	cursor: default;
 }
 
-.innerText{
-  background-color: darkslategrey;
-  color:azure;
-  padding: 0.5em 1em;
-  border-radius:15px;
-  transition: background-color 0.5s ease-in-out; /* Add this line */
+.cards li:hover {
+	background-color: darkslategrey;
+	cursor: default;
 }
 
-#primulCard{
-  grid-area: primul-card;
+.cards h2,
+h1 {
+	background: #242424;
+	margin: 0;
+	padding: 0.5em 1em;
+	color: azure;
+	transition: background-color 0.5s ease-in-out;
 }
 
-
-#cardBaroc{
-  grid-area:card-baroc;
+.cards .inner {
+	list-style: none;
+	background-color: rgb(36, 36, 36);
+	padding: 0.5em 1em;
 }
 
-#cardVictorian{
-  grid-area:card-victorian;
+.innerText {
+	background-color: darkslategrey;
+	color: azure;
+	padding: 0.5em 1em;
+	border-radius: 15px;
+	transition: background-color 0.5s ease-in-out;
 }
+
+.imagineCard {
+	height: fit-content;
+	width: 100%;
+	border-radius: 10px;
+}
+
+#imagineBaroc {
+	margin-top: 52px;
+}
+
+#imagineVictorian {
+	height:67%;
+	margin-top: 71px;
+}
+
+#imagineModern {
+	margin-top:18px;
+}
+
+#imagineGotic {
+	margin-top:55px;
+}
+
+img {
+	height: fit-content;
+	width: 100%;
+	border-radius: 10px;
+}
+
+#primulCard {
+	grid-area: primul-card;
+	/* animation: slideLeftPrimulCard 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s both; */
+}
+/* @keyframes slideLeftPrimulCard {
+	0% {
+	  transform: translateX(1000px);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+} */
+
+
+#cardBaroc {
+	grid-area: card-baroc;
+	animation: slideLeftBaroc 2s ease-in-out 1s both;
+}
+@keyframes slideLeftBaroc {
+	0% {
+	  transform: translateX(350%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+
+#cardVictorian {
+	grid-area: card-victorian;
+	animation: slideLeftVictorian 2.5s ease-in-out 1s both;
+}
+@keyframes slideLeftVictorian {
+	0% {
+	  transform: translateX(450%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
 
 #cardArtNouveau{
-  grid-area:card-artnouveau;
+	grid-area: card-artnouveau;
+	animation: slideLeftArtNouveau 3s ease-in-out 1s both;
+} 
+@keyframes slideLeftArtNouveau {
+	0% {
+	  transform: translateX(550%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
 }
 
-img{
-  height:fit-content;
-  width:100%;
-  border-radius: 10px;
+#cardArtDeco{
+	animation: slideRightArtDeco 3s ease-in-out 5s both; 
 }
+@keyframes slideRightArtDeco {
+	0% {
+	  transform: translateX(-550%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+
+#cardModern{
+	animation: slideRightModern 2.5s ease-in-out 5s both; 
+}
+@keyframes slideRightModern {
+	0% {
+	  transform: translateX(-450%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+
+  #cardGotic{
+	animation: slideRightGotic 2s ease-in-out 5s both;
+  }
+  @keyframes slideRightGotic {
+	0% {
+		transform: translateX(-350%);
+	  }
+	  100% {
+		transform: translateX(0);
+	  }
+	}
+
+
+
+
+
 
 
 
@@ -192,16 +311,17 @@ img{
 
 /* ecran mic */
 @media (max-width: 45em) {
-  .navListLogo{
-    font-size:70%;
-  }
-  .navListItem{
-    font-size: 60%;
-  }
-  .navList{
-    justify-content:space-evenly;
-    margin: 0 -0.5rem;
-    margin-right: 1rem;
-  }
-}
+	.navListLogo {
+		font-size: 70%;
+	}
 
+	.navListItem {
+		font-size: 60%;
+	}
+
+	.navList {
+		justify-content: space-evenly;
+		margin: 0 -0.5rem;
+		margin-right: 1rem;
+	}
+}
