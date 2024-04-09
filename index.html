@@ -1,5 +1,3 @@
-<!-- de adaugat animatii la cards si de continuat continutul propriu zis la main page -->
-
 <!DOCTYPE html>
 <html>
 
@@ -9,8 +7,14 @@
 	<meta name="description" content="stiluri arhitecturale">
 	<meta name="keywords" content="cladiri">
 
-	<title>Stiluri arhitecturale</title>
-	<link rel="stylesheet" href="index.css" type="text/css">
+	<title>Pagina principala</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="Styles/index.css" type="text/css">
 	<link rel="icon" type="image.x-icon" href="Imagini/favicon2.ico">
 	<base href="Proiect TW">
 
@@ -20,18 +24,18 @@
 	<header>
 		<nav class="nav">
 			<ul class="navList">
-				<li class="navListLogo" id="logo">Stiluri arhitecturale</li>
+				<li class="navListLogo" id="logo"><a href="index.html">Stiluri arhitecturale</a></li>
 				<li class="navListItem" id="butonStiluri">Meniu
 					<ul class="navListItemDropdown">
-						<li class="navListItemDropdownItem">Baroc</li>
-						<li class="navListItemDropdownItem">Victorian</li>
-						<li class="navListItemDropdownItem">Art Nouveau</li>
-						<li class="navListItemDropdownItem">Art Deco</li>
-						<li class="navListItemDropdownItem">Modern</li>
-						<li class="navListItemDropdownItem">Gotic</li>
+						<li class="navListItemDropdownItem"><a href="baroc.html">Baroc</a></li>
+						<li class="navListItemDropdownItem"><a href="victorian.html">Victorian</a></li>
+						<li class="navListItemDropdownItem"><a href="artnouveau.html">Art Nouveau</a></li>
+						<li class="navListItemDropdownItem"><a href="artdeco.html">Art Deco</a></li>
+						<li class="navListItemDropdownItem"><a href="modern.html">Modern</a></li>
+						<li class="navListItemDropdownItem"><a href="gotic.html">Gotic</a></li>
 					</ul>
 				</li>
-				<li class="navListItem" id="butonTrivia">Trivia</li>
+				<li class="navListItem" id="butonTrivia"><a href="trivia.html">Trivia</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -79,11 +83,12 @@
 						modelele pentru intrările noului Metrou.<br>În România, <span class="evidentiereSpan">Art Nouveau</span> se
 						regăsește sub formă de elemente decorative la case în stil eclectic în București
 						și izolat la unele clădiri din Transilvania. Cazinoul din Constanța și Sinaia sunt exemple reprezentative
-						ale stilului Art Nouveau. .</p>
+						ale stilului <span class="evidentiereSpan">Art Nouveau</span>.</p>
 					<img id="imagineArtNouveau" class="imagineCard" src="Imagini/art nouveau casa batllo.png">
 				<li id="cardArtDeco" class="inner">
 					<h2>Art Deco</h2>
-					<p class="innerText">Art Deco este un stil de arte vizuale, arhitectură și design care a apărut pentru prima
+					<p class="innerText"><span class="evidentiereSpan">Art Deco</span> este un stil de arte vizuale, arhitectură
+						și design care a apărut pentru prima
 						dată în Franța în anii 1910, chiar înainte de Primul Război Mondial. Acest stil a influențat designul
 						clădirilor, mobilei, bijuteriilor, modei, mașinilor, cinematografelor, trenurilor și obiectelor de zi cu zi,
 						precum aparatele de radio și aspiratoarele. Numele <span class="evidentiereSpan">Art Deco</span> provine de
@@ -106,7 +111,8 @@
 				</li>
 				<li id="cardGotic" class="inner">
 					<h2>Gotic</h2>
-					<p class="innerText"><span class="evidentiereSpan">Arhitectura gotică</span> este stilul arhitectonic asociat cu catedralele construite în Evul
+					<p class="innerText"><span class="evidentiereSpan">Arhitectura gotică</span> este stilul arhitectonic asociat
+						cu catedralele construite în Evul
 						Mediu târziu din Europa, începând cu secolul al XII-lea până în anii 1500. Cele mai importante opere
 						arhitecturale gotice se află în Franța, Germania și Marea Britanie. Acest stil a fost o transformare a
 						stilului romanic, apărut din necesitatea de a da o altă dimensiune verticală clădirilor.</p>
@@ -119,4 +125,8 @@
 	<footer></footer>
 </body>
 
+
 </html>
+
+
+<!--de adaugat animatii in paginili secundare-->
