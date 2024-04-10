@@ -374,6 +374,23 @@ img {
     margin: 0 -0.5rem;
     margin-right: 1rem;
   }
+  #divFooter{
+    font-size: 60%;
+    padding:0;
+  }
+  #logoFooter{
+    padding:0;
+    padding-bottom:20px;
+    color:red;
+  }
+  #nume{
+    padding:0;
+    margin-bottom:0;
+  }
+  h3{
+    padding:0;
+    margin-top:1.25rem;
+  }
 }
 
 @media (min-width: 50em) and (max-width: 75em) {
@@ -514,4 +531,44 @@ img {
     box-sizing: content-box;
     height: 100%;
   }
+}
+
+
+#divFooter{
+	font-family: "Merriweather", serif;
+	display:flex;
+	justify-content: space-between;
+	background-color: darkslategrey;
+	box-shadow: 0 0 10px black;
+	border-radius: 15px;
+	color:azure;
+
+	/* padding-top:0.01rem;
+	padding-bottom:0.01rem; */
+
+	padding-left:4.5rem;
+	padding-right:4.5rem;
+	margin-left:1.2rem;
+	margin-right:1.2rem;
+	margin-bottom:10px;
+}
+
+#nume{
+	padding-top:0.2rem;
+	color:azure;
+	transition: color 0.2s ease-in-out;
+}
+#nume:hover{
+	color:rgb(33, 56, 56);
+	cursor:pointer;
+}
+
+#logoFooter{
+	color:azure;
+	transition: color 0.2s ease-in-out;
+  padding-top:1.25rem;
+}
+#logoFooter:hover{
+	color:rgb(33, 56, 56);
+	cursor:pointer;
 }

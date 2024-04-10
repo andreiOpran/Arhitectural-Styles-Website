@@ -50,13 +50,67 @@ body {
 	font-weight: bold;
 	font-size: 130%;
 	white-space: nowrap;
-	transition: color 0.2s ease-in-out;
+
+	/* hover effect */
+
+	transition: color 0.2s ease-in-out; 
+
+
+	/*animatie simpla */
+
+	/* animation: colorChange 4s infinite; */ 
 }
+
+/* animatie simpla */
+
+/* @keyframes colorChange {
+  0% { color: azure; }
+  50% { color: rgb(33, 56, 56); }
+  100% { color: azure; }
+} */
+
+
+/*hover effect*/
 
 .navListLogo:hover {
 	cursor: pointer;
 	color: rgb(33, 56, 56);
 }
+
+
+/* animatie cu before and after */
+
+/* .navListLogo::before,
+.navListLogo::after {
+  content: "";
+  position: absolute;
+	top: 1rem;
+  left: 3.5rem;
+  width: 21%;
+  height: 50%;
+	z-index:-1;
+	border-radius:10px;
+}
+
+.navListLogo::before {
+  animation: beforeColorChange 4s infinite;
+}
+
+.navListLogo::after {
+  animation: afterColorChange 4s infinite;
+}
+
+@keyframes beforeColorChange {
+  0% { background-color: darkslategrey; }
+  50% { background-color: rgb(33, 56, 56); }
+  100% { background-color: darkslategrey; }
+}
+
+@keyframes afterColorChange {
+  0% { background-color: darkslategrey; }
+  50% { background-color: rgb(33, 56, 56); }
+  100% { background-color: darkslategrey; }
+} */
 
 .navListItem {
 	list-style: none;
@@ -224,7 +278,7 @@ h1 {
 }
 
 #imagineArtDeco {
-	margin-top: 0rem;
+	margin-top: 0;
 }
 
 #imagineModern {
@@ -232,7 +286,7 @@ h1 {
 }
 
 #imagineGotic {
-	margin-top: 39px;
+	margin-top: 40px;
 }
 
 img {
@@ -621,3 +675,79 @@ img {
 		}
 	}
 }
+
+
+
+
+
+/* footer{
+	border-radius:15px;
+	font-family: "Merriweather", serif;
+	display:flex;
+}
+#logoFooter{
+	background-color: darkslategrey;
+	box-shadow: 0 0 10px black;
+	border-radius: 15px;
+	color:azure;
+	padding-top:1.27rem;
+	padding-bottom:1.27rem;
+	padding-left:5rem;
+	margin-left:1.2rem;
+	margin-right:1.2rem;
+	width:60%;
+}
+#nume{
+	background-color: darkslategrey;
+	box-shadow: 0 0 10px black;
+	border-radius: 15px;
+	color:azure;
+	text-align: end;
+	justify-content: center;
+	padding-top:1.27rem;
+	padding-bottom:1.27rem;
+	padding-left:5rem;
+	padding-right:5rem;
+	margin-left:1.2rem;
+	margin-right:1.2rem;
+	width:50%;
+} */
+
+#divFooter{
+	font-family: "Merriweather", serif;
+	display:flex;
+	justify-content: space-between;
+	background-color: darkslategrey;
+	box-shadow: 0 0 10px black;
+	border-radius: 15px;
+	color:azure;
+
+	/* padding-top:0.01rem;
+	padding-bottom:0.01rem; */
+
+	padding-left:4.5rem;
+	padding-right:4.5rem;
+	margin-left:1.2rem;
+	margin-right:1.2rem;
+	margin-bottom:10px;
+}
+
+#nume{
+	padding-top:0.2rem;
+	color:azure;
+	transition: color 0.2s ease-in-out;
+}
+#nume:hover{
+	color:rgb(33, 56, 56);
+	cursor:pointer;
+}
+
+#logoFooter{
+	color:azure;
+	transition: color 0.2s ease-in-out;
+}
+#logoFooter:hover{
+	color:rgb(33, 56, 56);
+	cursor:pointer;
+}
+
