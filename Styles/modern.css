@@ -280,6 +280,7 @@ figure {
   /* Add this line */
   width: 270px;
   background-color: darkslategrey;
+  border-radius: 5px;
 }
 
 

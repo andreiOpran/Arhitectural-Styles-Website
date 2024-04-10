@@ -285,6 +285,7 @@ figure {
   border: 5px solid darkslategrey;
   width: 270px;
   background-color: darkslategrey;
+  border-radius: 5px;
 }
 
 figcaption {

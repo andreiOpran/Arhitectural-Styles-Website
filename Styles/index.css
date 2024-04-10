@@ -218,12 +218,21 @@ h1 {
 	margin-top: 71px;
 }
 
+#imagineArtNouveau{
+	margin-top: 13px;
+
+}
+
+#imagineArtDeco {
+	margin-top: 0rem;
+}
+
 #imagineModern {
-	margin-top: 18px;
+	margin-top: 19px;
 }
 
 #imagineGotic {
-	margin-top: 55px;
+	margin-top: 39px;
 }
 
 img {
@@ -380,7 +389,10 @@ img {
 	}
 
 	#imagineVictorian {
-		margin-top: 17px;
+		margin-top: 18px;
+	}
+	#imagineArtDeco{
+		margin-top: 33px;
 	}
 
 	#imagineModern {
@@ -388,7 +400,7 @@ img {
 	}
 
 	#imagineGotic {
-		margin-top: 36px;
+		margin-top: 38px;
 	}
 
 	#cardBaroc {

@@ -280,6 +280,7 @@ figure {
   /* Add this line */
   width: 270px;
   background-color: darkslategrey;
+  border-radius: 5px;
 }
 
 #figureLunga {
@@ -290,6 +291,9 @@ figure {
   transform: translateX(-1rem);
 }
 
+#sectiuneFranta{
+  margin-top:22rem;
+}
 figcaption {
   color: azure;
   margin: 0.25rem;
@@ -365,6 +369,7 @@ img {
       "navVertical"
       "main";
   }
+z
 
   main {
     height: fit-content;
