@@ -102,7 +102,7 @@ body {
 
 @keyframes beforeColorChange {
   0% { background-color: darkslategrey; }
-  50% { background-color: rgb(33, 56, 56); }
+  50% { background-color: rgb(36, 36, 36) }
   100% { background-color: darkslategrey; }
 }
 
@@ -312,7 +312,7 @@ img {
 
 #cardBaroc {
 	grid-area: card-baroc;
-	animation: xxslideLeftBaroc 2s ease-in-out 1s both;
+	animation: slideLeftBaroc 2s ease-in-out 1s both;
 }
 
 @keyframes slideLeftBaroc {
@@ -327,7 +327,7 @@ img {
 
 #cardVictorian {
 	grid-area: card-victorian;
-	animation: xxslideLeftVictorian 2.5s ease-in-out 1s both;
+	animation: slideLeftVictorian 2.5s ease-in-out 1s both;
 }
 
 @keyframes slideLeftVictorian {
@@ -342,7 +342,7 @@ img {
 
 #cardArtNouveau {
 	grid-area: card-artnouveau;
-	animation: xxslideLeftArtNouveau 3s ease-in-out 1s both;
+	animation: slideLeftArtNouveau 3s ease-in-out 1s both;
 }
 
 @keyframes slideLeftArtNouveau {
@@ -356,7 +356,7 @@ img {
 }
 
 #cardArtDeco {
-	animation: xxslideRightArtDeco 3s ease-in-out 5s both;
+	animation: slideRightArtDeco 3s ease-in-out 5s both;
 }
 
 @keyframes slideRightArtDeco {
@@ -370,7 +370,7 @@ img {
 }
 
 #cardModern {
-	animation: xxslideRightModern 2.5s ease-in-out 5s both;
+	animation: slideRightModern 2.5s ease-in-out 5s both;
 }
 
 @keyframes slideRightModern {
@@ -384,7 +384,7 @@ img {
 }
 
 #cardGotic {
-	animation: xxslideRightGotic 2s ease-in-out 5s both;
+	animation: slideRightGotic 2s ease-in-out 5s both;
 }
 
 @keyframes slideRightGotic {
