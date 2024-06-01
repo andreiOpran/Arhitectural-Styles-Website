@@ -1,4 +1,3 @@
-// 2login.js
 document.getElementById("login-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -27,9 +26,11 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
         });
 });
 
+// culoare primul buton
 var firstButton = document.querySelector('button');
 firstButton.style.backgroundColor = 'rgb(47, 79, 79)';
 
+// range output
 var range = document.getElementById('range');
 var output = document.getElementById('value');
 range.oninput = function () {
@@ -37,6 +38,7 @@ range.oninput = function () {
 }
 output.textContent = range.value;
 
+// schimbare culoare formular cnd intri prima data
 setTimeout(function () {
     var schimbCuloare = document.getElementById('formular');
     schimbCuloare.classList.add('fade-in');
@@ -47,10 +49,12 @@ setTimeout(function () {
     schimbCuloare.classList.add('fade-out');
 }, 8000);
 
+// resetare culoare buton
 button = document.getElementById('loginButton');
 button.style.backgroundColor = '';
 
 
+// match culoare buton cu background color ul de la formular
 document.getElementById("styleButton").addEventListener("click", function () {
     var formular = document.getElementById("formular");
     var currentStyle = window.getComputedStyle(formular);

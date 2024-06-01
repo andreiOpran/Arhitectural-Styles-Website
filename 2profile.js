@@ -1,3 +1,4 @@
+// get user
 document.addEventListener("DOMContentLoaded", () => {
 	const userNameDisplay = document.getElementById("user-name");
 	const loggedInUser = sessionStorage.getItem("username");
@@ -54,10 +55,6 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 
 	var scoreImages = document.getElementById('scoreImages');
 
-	while (scoreImages.firstChild) {
-		scoreImages.removeChild(scoreImages.firstChild);
-	}
-
 	var newImage = document.createElement('img');
 
 
@@ -100,21 +97,6 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 
 });
 
-
-
-document.querySelectorAll('input[type="radio"]').forEach(radio => {
-	radio.addEventListener('change', (event) => {
-		event.target.parentElement.classList.add('highlight');
-	});
-});
-
-document.getElementById('trivia-form').querySelector('button[type="submit"]').addEventListener('mouseenter', function(event) {
-	event.target.classList.add('hover');
-});
-
-document.getElementById('trivia-form').querySelector('button[type="submit"]').addEventListener('mouseleave', function(event) {
-	event.target.classList.remove('hover');
-});
 
 
 window.addEventListener('keydown', function (event) {
