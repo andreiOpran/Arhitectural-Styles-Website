@@ -1,0 +1,79 @@
+/* box-sizing for including padding */
+html {
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  *:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  
+  body {
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-color: rgb(36,36,36);
+  }
+  
+  
+  div {
+    margin: 12px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+  }  
+  
+  textarea {
+    resize: none;
+    margin-top: 10px;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: gray;  
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+#back
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#formular {
+  transition: background-color 1s ease-in-out;
+  border-radius: 10px;
+}
+
+#formular.fade-in {
+  background-color: rgb(30, 30, 30);
+}
+
+#formular.fade-out {
+  background-color: rgb(36, 36, 36);
+}
+
+#loginButton.new-style{
+  border: 0.5px solid azure;
+}
+

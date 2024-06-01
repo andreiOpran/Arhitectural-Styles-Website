@@ -8,7 +8,7 @@
 	<meta name="keywords" content="cladiri">
 	<html lang="ro">
 	<title>Trivia</title>
-	<link rel="stylesheet" href="Styles/index.css" type="text/css">
+	<link rel="stylesheet" href="Styles/trivia.css" type="text/css">
 	<link rel="icon" type="image.x-icon" href="Imagini/favicon2.ico">
 	<base href="Proiect TW">
 
@@ -30,13 +30,84 @@
 						<li class="navListItemDropdownItem"><a href="gotic.html">Gotic</a></li>
 					</ul>
 				</li>
-				<li class="navListItem" id="butonTrivia"><a href="trivia.html">Trivia</a></li>
+				<li class="navListItem" id="butonTrivia"><a href="2index.html">Trivia</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<h1>PENTRU PROIECT 2</h1>
+		<h2>User: <span id="user-name"></span></h2>
+		<button id="logout-button">Logout</button>
+		<br><br><br>
+		
+		<div id="divTrivia">
+
+		
+
+	
+
+			<h1>Trivia</h1>
+			<div>
+
+				<form id="trivia-form">
+					<div class="question">
+						<br>
+						<img src="Imagini/modern fallingwater.jpeg" alt="Question 1">
+						<div class="divIntrebari">
+							<span><h3>Unde se afla aceasta cladire?</h3></span>
+
+						<input type="radio" name="question1" value="option1"> Romania<br>
+						<input type="radio" name="question1" value="option2"> SUA<br>
+						<input type="radio" name="question1" value="option3"> Thailanda<br>
+						</div>
+					</div>
+					<hr>
+					<div class="question">
+						<br>
+						
+						<img src="Imagini/victorian royal exhibition building.jpg" alt="Question 2">
+						<div class="divIntreabri">
+							<span><h3>Cum se numeste stilul arhitectural al acestei cladiri?</h3></span>
+						<input type="radio" name="question2" value="option1"> Victorian<br>
+						<input type="radio" name="question2" value="option2"> Art Nouveau<br>
+						<input type="radio" name="question2" value="option3"> Gotic<br>
+						</div>
+					</div>
+					<hr>
+					<div class="question">
+						<br>
+						<img src="Imagini/poza11.jpg" alt="Question 3">
+						<div class="divIntreabri">
+							<span><h3>Ce inaltime are cladirea de mai sus?</h3></span>
+						<input type="radio" name="question3" value="option1"> 147 metri<br>
+						<input type="radio" name="question3" value="option2"> 157 metri<br>
+						<input type="radio" name="question3" value="option3"> 167 metri<br>
+						</div>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+				<br>
+				
+				
+
+			</div>
+		</div>
+
+		<div id="score"></div>
+				<br><br><br><br>
+				<div id="ultimul">
+					<div id="scoreImages"></div>
+				</div>
+				<div id="ultimul2">
+					
+					<div id="highScores"></div>
+				</div>
+				<br><br><br><br><br><br>
+
+
+
+		<script src="2profile.js"></script>
 	</main>
 
 	<footer></footer>

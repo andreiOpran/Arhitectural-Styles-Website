@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="Styles/2index.css">
+</head>
+
+<body>
+
+
+
+	<div id="formular">
+		<form id = "login-form">
+			<fieldset>
+
+				<legend>Login</legend>
+
+
+				<div>
+					Email:
+					<input type="text" id="username" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="ion.popescu@email.com"title="Introdu o adresa de email corecta." required>
+				</div>
+				
+				<div>
+					Parola:
+					<input type="password" id="password" placeholder="Parola" required />
+				</div>
+
+				<div>
+					Telefon:
+					<input type="tel" id="tel" name="tel" pattern="07[0-9]{2} [0-9]{3} [0-9]{3}" required placeholder="0712 345 678" />
+				</div>
+
+				<div>
+					<input
+						type="checkbox"
+						id="rememberMe"
+						name="rememberMe"
+						value="rememberMe"
+					/>
+					
+					<label for="rememberMe">Remember me</label>
+				</div>
+
+				<div>
+					Student la Arhitectura:
+				
+						<div>
+							<input type="radio" required />
+							<label for="userType1">Da</label>
+			
+							<input type="radio" required />
+							<label for="userType2">Nu</label>
+						</div>
+					
+				</div>
+
+				<div>
+					Anul de studiu (0 daca nu sunteti student la Arhitectura):
+					<input type="number" id="anulDeStudiu" name="anulDeStudiu" min="0" max="6" required />
+				</div>
+
+				<div>
+					<range>
+						<label for="range">Cât de mult vă place arhitectura?</label>
+						<input type="range" id="range" name="range" min="1" max="10" step="1" value="5" 
+					/>
+					<span><output id="value"></output></span>
+
+					<datalist id="values">
+						<option value="1" label="1"></option>
+						<option value="2" label="2"></option>
+						<option value="3" label="3"></option>
+						<option value="4" label="4"></option>
+						<option value="5" label="5"></option>
+						<option value="6" label="6"></option>
+						<option value="7" label="7"></option>
+						<option value="8" label="8"></option>
+						<option value="9" label="9"></option>
+						<option value="10" label="10"></option>
+					</datalist>
+				</div>
+
+
+
+				<div>
+					<label for="varsta">Varsta:</label>
+					<select id="varsta" name="varsta">
+						<option value="18-25">18-25</option>
+						<option value="26-35">26-35</option>
+						<option value="36-45">36-45</option>
+						<option value="46-55">46-55</option>
+						<option value="56-65">56-65</option>
+						<option value="66-75">66-75</option>
+						<option value="76-85">76-85</option>
+						<option value="86-95">86-95</option>
+						<option value="96-105">96-105</option>
+					</select>
+				</div>
+
+				
+				<div>
+					<button id="loginButton" type="submit">Login</button>
+
+					
+
+				</div>
+			
+
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="back">
+		<a href="index.html">
+			<button id="backButton">Pagina principala</button>
+			
+		</a>
+		<br>
+		
+	</div>	
+
+	<button type="button" id="styleButton">Schimba stilul</button> 
+
+
+
+
+		<script src="2login.js"></script>
+
+</body>
+
+</html>

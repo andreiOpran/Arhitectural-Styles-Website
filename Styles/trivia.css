@@ -1,0 +1,406 @@
+
+
+button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: darkslategrey;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+html {
+	scroll-behavior: smooth;
+	font-family: "Merriweather", serif;
+}
+
+header {
+	text-transform: uppercase;
+	padding-bottom: 7rem;
+	
+	font-family: "Merriweather", serif;
+	font-size:110%;
+}
+
+body {
+	background-color: rgb(36, 36, 36);
+}
+
+/* de aici incepe nav ul  */
+
+
+.nav {
+	position: fixed;
+	z-index: 1;
+	width: calc(100vw -4rem);
+	box-shadow: 0 0 10px black;
+	background-color: darkslategrey;
+	border-radius: 15px;
+	right: 1.5rem;
+	left: 1.5rem;
+}
+
+.navList {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 2rem;
+	margin: 0 2rem;
+	margin-right: 5rem;
+	color: azure;
+}
+
+#verticalNav {
+	position: Sticky;
+}
+
+.navListLogo {
+	list-style: none;
+	margin-right: auto;
+	font-weight: bold;
+	font-size: 130%;
+	white-space: nowrap;
+
+	/* hover effect */
+
+	transition: color 0.2s ease-in-out; 
+
+
+	/*animatie simpla */
+
+	/* animation: colorChange 4s infinite; */ 
+}
+
+/* animatie simpla */
+
+/* @keyframes colorChange {
+  0% { color: azure; }
+  50% { color: rgb(33, 56, 56); }
+  100% { color: azure; }
+} */
+
+
+/*hover effect*/
+
+.navListLogo:hover {
+	cursor: pointer;
+	color: rgb(33, 56, 56);
+}
+
+
+/* animatie cu before and after */
+
+/* .navListLogo::before,
+.navListLogo::after {
+  content: "";
+  position: absolute;
+	top: 1rem;
+  left: 3.5rem;
+  width: 21%;
+  height: 50%;
+	z-index:-1;
+	border-radius:10px;
+}
+
+.navListLogo::before {
+  animation: beforeColorChange 4s infinite;
+}
+
+.navListLogo::after {
+  animation: afterColorChange 4s infinite;
+}
+
+@keyframes beforeColorChange {
+  0% { background-color: darkslategrey; }
+  50% { background-color: rgb(36, 36, 36) }
+  100% { background-color: darkslategrey; }
+}
+
+@keyframes afterColorChange {
+  0% { background-color: darkslategrey; }
+  50% { background-color: rgb(33, 56, 56); }
+  100% { background-color: darkslategrey; }
+} */
+
+.navListItem {
+	list-style: none;
+	position: relative;
+	padding: 1.5rem 1rem;
+	cursor: pointer;
+	font-size: 90%;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+#logo {
+	cursor: default;
+}
+
+#butonStiluri {
+	cursor: default;
+}
+
+.navListItemDropdownItem {
+	cursor: pointer;
+}
+
+#butonTrivia {
+	transition: color 0.2s ease-in-out;
+}
+
+#butonTrivia:hover {
+	color: rgb(33, 56, 56);
+}
+
+.navListItem:hover .navListItemDropdown {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navListItemDropdown {
+	position: absolute;
+	top: 100%;
+	left: -1rem;
+	box-shadow: 0 0 10px black;
+	border-radius: 0 0 10px 10px;
+	width: auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 200ms ease-in-out;
+	background-color: rgb(33, 56, 56);
+}
+
+.navListItemDropdownItem {
+	list-style: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	transition: background-color 200ms ease-in-out;
+	white-space: nowrap;
+}
+
+.navListItemDropdownItem:hover {
+	background-color: #2f4f4f;
+}
+
+
+/* main  */
+
+.evidentiereSpan {
+
+	font-weight: bold;
+}
+
+
+#divFooter{
+	font-family: "Merriweather", serif;
+	display:flex;
+	justify-content: space-between;
+	background-color: darkslategrey;
+	box-shadow: 0 0 10px black;
+	border-radius: 15px;
+	color:azure;
+
+	/* padding-top:0.01rem;
+	padding-bottom:0.01rem; */
+
+	padding-left:4.5rem;
+	padding-right:4.5rem;
+	margin-left:1.2rem;
+	margin-right:1.2rem;
+	margin-bottom:10px;
+}
+
+#nume{
+	padding-top:0.2rem;
+	color:azure;
+	transition: color 0.2s ease-in-out;
+}
+#nume:hover{
+	color:rgb(33, 56, 56);
+	cursor:pointer;
+}
+
+#logoFooter{
+	color:azure;
+	transition: color 0.2s ease-in-out;
+}
+#logoFooter:hover{
+	color:rgb(33, 56, 56);
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#divTrivia{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+
+
+#trivia-form {
+	background-color: #2f4f4f;
+	padding: 20px;
+	border-radius: 10px;
+	color: #fff;
+	width: 40%;
+	margin: 0 auto;
+}
+
+#trivia-form .question {
+	margin-bottom: 20px;
+}
+
+#trivia-form img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#trivia-form input[type="radio"] {
+	margin-right: 5px;
+}
+
+#trivia-form button {
+	display: block;
+	margin: 0 auto;
+	background-color: rgb(33, 56, 56);
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#trivia-form button:hover {
+	background-color: rgb(26, 49, 49);
+}
+
+
+#score {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+h1 {
+	color: azure;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+h2{
+	color: azure;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+hr{
+	width: 100%;
+	border: 1px solid azure;
+	margin-bottom: 25px;
+}
+
+
+#ulimul{
+	
+
+}
+
+#scoreImages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#scoreImages img {
+	width: 20%; 
+	height: auto; 
+	background: transparent;
+}
+
+
+h3{
+	padding: 0;
+	margin-top: 3px;
+	margin-bottom:15px;
+}
+
+.highlight {
+    background-color: rgb(33, 56, 56);
+	border-radius: 20px;
+	padding:10px;
+}
+
+.low-score {
+    background-color: red;
+}
+
+.medium-score {
+    background-color: orange;
+}
+
+.high-score {
+    background-color: green;
+}
+
+#divIntrebari{
+	
+	background-color: red;
+}
+
+
+#ultimul2{
+	color:azure;
+	font-size: 20px;
+	text-align: center;
+}
