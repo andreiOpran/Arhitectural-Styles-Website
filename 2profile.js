@@ -16,16 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// ce se intampla dupa apasare submit
 document.getElementById('trivia-form').addEventListener('submit', function (event) {
 	event.preventDefault();
 
+	// contor scor
 	var score = 0;
+	// raspunsurile corecte
 	var answers = {
 		question1: 'option2',
 		question2: 'option1',
 		question3: 'option3'
 	};
 
+	// verificare raspunsuri
 	for (var question in answers) {
 		var userAnswer = document.querySelector('input[name="' + question + '"]:checked');
 		if (userAnswer && userAnswer.value === answers[question]) {
@@ -33,6 +37,7 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 		}
 	}
 
+	// afisare scor
 	if (score != 1) {
 		document.getElementById('score').textContent = 'Ai raspuns corect la ' + score + ' intrebari.';
 	}
@@ -42,8 +47,10 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 	}
 	document.getElementById('score').style.borderRadius = '7px';
 
+	// salvare scor in local storage
 	saveHighScore(score);
 
+	// culori scor
 	var scoreMessage = document.getElementById('score');
 	if (score === 0) {
 		scoreMessage.classList.add('low-score');
@@ -53,6 +60,7 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 		scoreMessage.classList.add('high-score');
 	}
 
+	// emoji scor
 	var scoreImages = document.getElementById('scoreImages');
 
 	var newImage = document.createElement('img');
@@ -69,12 +77,15 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 		newImage.src = 'Imagini/score23.jpg';
 	}
 
+	// adaugare imagine
 	scoreImages.appendChild(newImage);
 	var divTrivia = document.getElementById("divTrivia");
 
+	// stergere trivia
 	divTrivia.parentNode.removeChild(divTrivia);
 
 
+	// salvare scor in local storage
 	function saveHighScore(score) {
         let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
         highScores.push(score);
@@ -82,6 +93,7 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
         displayHighScores();
     }
 
+	// afisare scoruri
 	function displayHighScores() {
         let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
         let highScoresDiv = document.getElementById('highScores');
@@ -98,7 +110,14 @@ document.getElementById('trivia-form').addEventListener('submit', function (even
 });
 
 
+// schimbare culoare intrebari
+document.querySelectorAll('input[type="radio"]').forEach(radio => {
+	radio.addEventListener('change', (event) => {
+		event.target.parentElement.classList.add('highlight');
+	});
+});
 
+// esc redirectionare al index
 window.addEventListener('keydown', function (event) {
 	if (event.key === 'Escape') {
 		console.log("Ai apasat tasta Esc si ai fost redirectionat pe pagina principala");
